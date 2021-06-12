@@ -1,7 +1,7 @@
 
 import { useState, useEffect,} from "react";
 
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import Camp from "./components/Camp.js";
 import Npc from "./components/Npc.js";
@@ -10,6 +10,7 @@ import Status from "./components/Status.js";
 import Zones from "./components/Zones.js";
 import Tower from "./components/Tower.js";
 import Zonebattle from "./components/Zonebattle.js";
+
 
 import './App.css';
 
@@ -733,9 +734,6 @@ const App = () => {
         }
     ]);
 
-
-
-
     /*
     useEffect(() => {
         let tryToGetLocalStorage = JSON.parse(localStorage.getItem("userInfo"));
@@ -992,34 +990,35 @@ const App = () => {
 
     
     return(
-        <UserContext.Provider value={userState}>
-            <div className="app" >
-                <Router>
-                    <Route path="/npc">
-                        <Npc />
-                    </Route>
-                    <Route path="/bag">
-                        <Bag userInfo={userInfo} />
-                    </Route>
-                    <Route path="/status">
-                        <Status  />
-                    </Route>
-                    <Route exact path="/zones">
-                        <Zones />
-                    </Route>
-                    <Route path="/zones/:id">
-                        <Zonebattle userInfo={userInfo} zones={zones} setUserInfo={setUserInfo} />
-                    </Route>
-                    <Route path="/tower">
-                        <Tower />
-                    </Route>
-                    <Route exact path="/">
-                        <Camp />
-                    </Route>
-                </Router>
-            </div>
-        </UserContext.Provider>
-        
+        <Router>
+            <UserContext.Provider value={userState}>
+                <div className="app" >
+                    <Switch>
+                        <Route path="/npc">
+                            <Npc />
+                        </Route>
+                        <Route path="/bag">
+                            <Bag userInfo={userInfo} />
+                        </Route>
+                        <Route path="/status">
+                            <Status  />
+                        </Route>
+                        <Route exact path="/zones">
+                            <Zones />
+                        </Route>
+                        <Route path="/zones/:id">
+                            <Zonebattle userInfo={userInfo} zones={zones} setUserInfo={setUserInfo} />
+                        </Route>
+                        <Route path="/tower">
+                            <Tower />
+                        </Route>
+                        <Route exact path="/">
+                            <Camp />
+                        </Route>
+                    </Switch>
+                </div>
+            </UserContext.Provider>
+        </Router>
     )
 }
 
