@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.status {
+    width: 100%;
+    height: 100%;
+    font-family: 'Odibee Sans', cursive;
+    background-color: white;
+}
+.status__top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.status__top__wrap{
+    width: 36rem;
+    height: 100%;
+    border: 2px solid black;
+    border-top: none;
+}
+.status__top__wrap__text{
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    color: red;
+}
+.status__top__wrap__text--hide{
+    display: none;
+}
+
+.status__top__title{
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    transform: skew(-20deg);
+    margin-left: -.7rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: white;
+}
+.status__top__home{
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    transform: skew(-20deg);
+    margin-right: -.7rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.status__wrap{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.status__wrap__info{
+    width:  30%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.status__wrap__info__card{
+    width: 80%;
+    height: 90%;
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.status__wrap__info__card__border{
+    width: 80%;
+    height: 90%;
+    border: 2px solid gold;
+    
+}
+.status__wrap__info__card__border__rarity{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: white;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+    box-shadow: 0 0 5px white;
+}
+.status__wrap__info__card__border__text{
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+    line-height: 3rem;
+    color: white;
+    font-size: 1.2rem;
+}
+.status__wrap__info__card__border__text--name{
+    width: 90%;
+    height: 3rem;
+    margin: 4rem auto 0;
+    text-align: center;
+    line-height: 3rem;
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 0 0 3px orange;
+}
+.status__wrap__info__card__border__text__plus{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.status__wrap__info__card__border__text__plus:hover{
+    cursor: pointer;
+    color: red;
+}
+.status__wrap__deck{
+    width:  70%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.status__wrap__deck__button{
+    width: 10%;
+    height: 90%;
+}
+
+
+.status__wrap__deck__button__equipItem{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.status__wrap__deck__button__equipItem--true{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: red;
+    color: white;
+}
+.status__wrap__deck__button__equipItem:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+.status__wrap__deck__button__equip{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+
+}
+.status__wrap__deck__button__equip--true{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+    background-color: red;
+    color: white;
+}
+.status__wrap__deck__button__equip:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+.status__wrap__deck__button__all{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    margin-top: 0.6rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.status__wrap__deck__button__all--true{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+    background-color: red;
+    color: white;
+}
+.status__wrap__deck__button__all:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+
+
+.status__wrap__deck__wrap{
+    width: 89%;
+    height: 90%;
+    margin-left: 1%;
+    position: relative
+}
+.status__wrap__deck__wrap__cards{
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.status__wrap__deck__wrap__cards__spell{
+    display: inline-block;
+    width: 20rem;
+    height: 95%;
+    background-color: rgb(43, 40, 40);
+    margin: 1rem 0.5rem;
+
+}
+.status__wrap__deck__wrap__cards__spell:first-child{
+    margin: 1rem 0.5rem 1rem 1rem;
+}
+
+.status__wrap__deck__wrap__cards__spell__border{
+    width: 80%;
+    height: 90%;
+    border: 2px solid gold;
+    margin: 8.5% auto;
+    position: relative;
+}
+.status__wrap__deck__wrap__cards__spell__border__rarity{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+   
+}
+.status__wrap__deck__wrap__cards__spell__border__rarity--white{
+    background-color: white;
+    box-shadow: 0 0 5px white;
+}
+.status__wrap__deck__wrap__cards__spell__border__rarity--blue{
+    background-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+.status__wrap__deck__wrap__cards__spell__border__rarity--green{
+    background-color: lightgreen;
+    box-shadow: 0 0 5px lightgreen;
+}
+.status__wrap__deck__wrap__cards__spell__border__rarity--gold{
+    background-color: gold;
+    box-shadow: 0 0 5px gold;
+}
+.status__wrap__deck__wrap__cards__spell__border__rarity--crimson{
+    background-color: crimson;
+    box-shadow: 0 0 5px crimson;
+}
+
+.status__wrap__deck__wrap__cards__spell__border__leftBox{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 5rem;
+    transform: rotate(45deg);
+    left: 1rem;
+}
+
+.status__wrap__deck__wrap__cards__spell__border__leftBox--fire{
+    background-color: red;
+    box-shadow: 0 0 5px red;
+}
+.status__wrap__deck__wrap__cards__spell__border__leftBox--wind{
+    background-color: lightgreen;
+    box-shadow: 0 0 5px lightgreen;
+}
+.status__wrap__deck__wrap__cards__spell__border__leftBox--earth{
+    background-color: peru;
+    box-shadow: 0 0 5px peru;
+}
+.status__wrap__deck__wrap__cards__spell__border__leftBox--water{
+    background-color: lightskyblue;
+    box-shadow: 0 0 5px lightblue;
+}
+.status__wrap__deck__wrap__cards__spell__border__leftBox--dark{
+    background-color: rgb(31, 17, 17);
+    box-shadow: 0 0 5px rgb(31, 17, 17);
+}
+.status__wrap__deck__wrap__cards__spell__border__leftBox--light{
+    background-color: yellow;
+    box-shadow: 0 0 5px yellow;
+}
+
+
+
+
+
+.status__wrap__deck__wrap__cards__spell__border__rightBox--attack{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 5rem;
+    transform: rotate(45deg);
+    right: 1rem;
+    background-color: crimson;
+    box-shadow: 0 0 5px crimson;
+}
+.status__wrap__deck__wrap__cards__spell__border__rightBox--buff{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: green;
+    box-shadow: 0 0 5px green;
+}
+.status__wrap__deck__wrap__cards__spell__border__rightBox--debuff{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: rgb(61, 74, 116);
+    box-shadow: 0 0 10px rgb(61, 74, 116);
+    border-radius: 50%;
+}
+
+.status__wrap__deck__wrap__cards__spell__border__name{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 0 0 5px lightgreen;
+}

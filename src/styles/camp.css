@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.camp {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.camp__ontop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.camp__ontop__show{
+    width: 20rem;
+    height: 35rem;
+    background-color: rgb(43, 40, 40);
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+}
+.camp__ontop__show__border{
+    position: absolute;
+    width: 18rem;
+    height: 33rem;
+    border: 2px solid gold;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    z-index: 7;
+}
+.camp__ontop__show__image{
+    width: 18rem;
+    height: 27.55rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 5;
+}
+.camp__ontop__show__rarity{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    margin: 2rem 9.25rem 0;
+    transform: rotate(45deg);
+    background-color: crimson;
+    box-shadow: 0 0 5px crimson;
+    position: absolute;
+    z-index: 7;
+}
+.camp__ontop__show__leftElement{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    background-color: yellow;
+    z-index: 7;
+    box-shadow: 0 0 5px yellow;
+}
+.camp__ontop__show__rightElement{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 5rem;
+    right: 2rem;
+    background-color: green;
+    z-index: 7;
+    box-shadow: 0 0 5px green;
+}
+.camp__ontop__show__name{
+    width: 88%;
+    height: 3rem;
+    margin: 30.5rem auto 0;
+    text-align: center;
+    line-height: 3rem;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0px 0px 2px tomato;
+}
+
+
+.camp__ontop__title{
+    width: 25rem;
+    height: 100%;
+    margin-left: 30rem;
+}
+.camp__ontop__title__name{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Odibee Sans', cursive;
+    margin-top: 7rem;
+    letter-spacing: 0.2rem;
+}
+.camp__ontop__title__extend{
+    margin: 0.5rem auto;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.5rem;
+    font-family: 'Odibee Sans', cursive;
+}
+
+
+.camp__ontop__buttons{
+    position: absolute;
+    width: 25rem;
+    height: 10rem;
+    right: 5rem;
+    top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+}
+.camp__ontop__buttons__button{
+    border: 2px solid red;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.camp__ontop__buttons__button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+
+.camp__ontop__tower{
+    width: 25rem;
+    height: 5rem;
+    border: 2px solid red;
+    position: absolute;
+    right: 5rem;
+    top: 25rem;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.camp__ontop__tower:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}

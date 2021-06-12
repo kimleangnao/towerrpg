@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.zones {
+    width: 100%;
+    height: 100%;
+    font-family: 'Odibee Sans', cursive;
+    background-color: white;
+}
+
+.zones__top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.zones__top__title{
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+    transform: skew(-20deg);
+    margin-left: -.7rem;
+}
+.zones__top__home{
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+    transform: skew(-20deg);
+    margin-right: -.7rem;
+    text-decoration: none;
+}
+
+
+.zones__wrap{
+    width: 100%;
+    height: 90%;
+}
+.zones__wrap__nav{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.zones__wrap__nav__button{
+    width: 8rem;
+    height: 100%;
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: rgb(43, 40, 40);
+    border-radius: 0.2rem;
+}
+.zones__wrap__nav__button:hover{
+    cursor: pointer;
+}
+.zones__wrap__nav__button--active {
+    background-color: mediumseagreen;
+}
+.zones__wrap__nav__button__rarity{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    transform: rotate(45deg);
+    margin-left: 1rem;
+}
+.zones__wrap__nav__button__rarity--white{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    transform: rotate(45deg);
+    margin-left: 1rem;
+}
+.zones__wrap__nav__button__rarity--blue{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+    transform: rotate(45deg);
+    margin-left: 1rem;
+}
+.zones__wrap__nav__button__rarity--green{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: lightgreen;
+    box-shadow: 0 0 5px lightgreen;
+    transform: rotate(45deg);
+    margin-left: 1rem;
+}
+.zones__wrap__nav__button__rarity--gold{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: gold;
+    box-shadow: 0 0 5px gold;
+    transform: rotate(45deg);
+    margin-left: 1rem;
+}
+.zones__wrap__nav__button__rarity--crimson{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: crimson;
+    box-shadow: 0 0 5px crimson;
+    transform: rotate(45deg);
+    margin-left: 1rem;
+}
+
+.zones__wrap__nav__button__text{
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.zones__wrap__cards{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+}
+.zones__wrap__cards__zone{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.zones__wrap__cards__zone__card{
+    width: 75%;
+    height: 85%;
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.zones__wrap__cards__zone__card__border{
+    width: 85%;
+    height: 90%;
+    border: 2px solid gold;
+}
+
+.zones__wrap__cards__zone__card__border__rarity--white{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+}
+.zones__wrap__cards__zone__card__border__rarity--blue{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+}
+.zones__wrap__cards__zone__card__border__rarity--green{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: lightgreen;
+    box-shadow: 0 0 5px lightgreen;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+}
+.zones__wrap__cards__zone__card__border__rarity--gold{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: gold;
+    box-shadow: 0 0 5px gold;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+}
+.zones__wrap__cards__zone__card__border__rarity--crimson{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    background-color: crimson;
+    box-shadow: 0 0 5px crimson;
+    margin: 1rem auto;
+    transform: rotate(45deg);
+}
+
+.zones__wrap__cards__zone__card__border__text{
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+}
+.zones__wrap__cards__zone__card__border__name{
+    width: 100%;
+    height: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 0 0 5px orange;
+}
+
+.zones__wrap__cards__zone__button{
+    width: 75%;
+    height: 4rem;
+    border: 2px solid red;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.zones__wrap__cards__zone__button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}

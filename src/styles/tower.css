@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.tower {
+    width: 100%;
+    height: 100%;
+    font-family: 'Odibee Sans', cursive;
+    background-color: white;
+}
+.tower__top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.tower__top__title{
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    transform: skew(-20deg);
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: -.7rem;
+    color: white;
+}
+.tower__top__home{
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    transform: skew(-20deg);
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: -.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+.tower__wrap{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    background-color: lightgrey;
+}
+.tower__wrap__cards{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    overflow-y: hidden;
+}
+.tower__wrap__cards__floor{
+    display: inline-block;
+    width: 20rem;
+    height: 92%;
+    margin: 1rem;
+}
+.tower__wrap__cards__floor__card{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.tower__wrap__cards__floor__card__border{
+    border: 2px solid gold;
+    width: 80%;
+    height: 88%;
+    position: relative;
+}
+.tower__wrap__cards__floor__card__border__name{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.tower__wrap__cards__floor__card__border__floor{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 21rem;
+}
+
+.tower__wrap__cards__floor__card__border__floor--activated{
+    color: white;
+}
+.tower__wrap__cards__floor__card__border__floor--deactivated{
+    color: white;
+    text-shadow: 0 0 5px red;
+}
+
+
+.tower__wrap__cards__floor__card__border__leftBox{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    position: absolute;
+    left: 1rem;
+    bottom: 5rem;
+    transform: rotate(45deg);
+}
+.tower__wrap__cards__floor__card__border__leftBox--fire{
+    background-color: red;
+    box-shadow: 0 0 5px red;
+}
+.tower__wrap__cards__floor__card__border__leftBox--wind{
+    background-color: lightgreen;
+    box-shadow: 0 0 5px lightgreen;
+}
+.tower__wrap__cards__floor__card__border__leftBox--earth{
+    background-color: peru;
+    box-shadow: 0 0 5px peru;
+}
+.tower__wrap__cards__floor__card__border__leftBox--water{
+    background-color: lightblue;
+    box-shadow: 0 0 5px lightblue;
+}
+.tower__wrap__cards__floor__card__border__leftBox--dark{
+    background-color: rgb(31, 17, 17);
+    box-shadow: 0 0 5px rgb(31, 17, 17);
+}
+.tower__wrap__cards__floor__card__border__leftBox--light{
+    background-color: yellow;
+    box-shadow: 0 0 5px yellow;
+}
+
+.tower__wrap__cards__floor__card__border__rightBox{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    position: absolute;
+    right: 1rem;
+    bottom: 5rem;
+    transform: rotate(45deg);
+}
+.tower__wrap__cards__floor__card__border__rightBox--diamond{
+    background-color: crimson;
+    box-shadow: 0 0 5px crimson;
+}
+.tower__wrap__cards__floor__card__border__rightBox--square{
+    background-color: green;
+    box-shadow: 0 0 5px green;
+}
+.tower__wrap__cards__floor__card__border__rightBox--circle{
+    background-color: rgb(61, 74, 116);
+    box-shadow: 0 0 5px rgb(61, 74, 116);
+}
+
+
+
+
+
+
+.tower__wrap__cards__floor__button{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    background-color: white;
+}
+.tower__wrap__cards__floor__button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
